@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screenshot to Frontend Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Screenshot to Frontend Generator</h1>
+    <p>Upload a webpage screenshot to generate HTML and CSS.</p>
+
+    <label for="screenshot">Choose a screenshot</label>
+    <input id="screenshot" type="file" accept="image/*">
+
+    <button id="generate" type="button">Generate code</button>
+    <p id="status" role="status"></p>
+
+    <section>
+      <h2>Screenshot</h2>
+      <img id="imagePreview" alt="Selected screenshot preview" hidden>
+    </section>
+
+    <section>
+      <h2>Generated code</h2>
+      <h3>HTML</h3>
+      <pre id="htmlOutput"></pre>
+      <h3>CSS</h3>
+      <pre id="cssOutput"></pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
